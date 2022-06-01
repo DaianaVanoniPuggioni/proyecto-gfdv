@@ -1,0 +1,88 @@
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+ul li {
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+ul a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+body {
+  height: 100vh;
+}
+
+.container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-main .logo-google {
+  width: 150px;
+}
+
+.container-main .container-input {
+  width: 50%;
+  border: 1px solid #dedbdb;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-main .container-input input {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.container-main .container-input input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.container-main .container-input:hover {
+  -webkit-box-shadow: 0 1px 6px #20212447;
+          box-shadow: 0 1px 6px #20212447;
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.container-main .container-button button {
+  margin: 20px 0 0 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: #F8F9FA;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.container-main .container-button button:hover {
+  border: 1px solid #d2d4d5;
+}
+/*# sourceMappingURL=styles.css.map */
