@@ -1,0 +1,35 @@
+footer{
+  background-color: rgb(241, 238, 238);
+  color: rgb(94, 94, 94);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.argentina{
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 20px;
+}
+
+.container-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid rgb(212, 210, 210);
+
+  a{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    padding-left: 20px;
+  }
+  .about{
+    padding-bottom: 20px;
+  }
+  .busqueda{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
+}

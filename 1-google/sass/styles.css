@@ -9,6 +9,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0;
 }
 
 ul li {
@@ -30,7 +31,8 @@ ul a {
 }
 
 body {
-  height: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .container-main {
@@ -70,11 +72,20 @@ body {
   border: none;
   height: 100%;
   width: 100%;
+  padding: 10px 5px;
 }
 
 .container-main .container-input input:focus-visible {
   border: none;
   outline: none;
+}
+
+.container-main .container-input .lupa {
+  padding-left: 10px;
+}
+
+.container-main .container-input .microphone {
+  padding-right: 10px;
 }
 
 .container-main .container-input:hover {
@@ -94,5 +105,81 @@ body {
 
 .container-main .container-button button:hover {
   border: 1px solid #d2d4d5;
+}
+
+footer {
+  background-color: #f1eeee;
+  color: #5e5e5e;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.argentina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0 20px 20px;
+}
+
+.container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #d4d2d2;
+}
+
+.container-footer a {
+  text-decoration: none;
+  color: #5e5e5e;
+  padding-left: 20px;
+}
+
+.container-footer .about {
+  padding-bottom: 20px;
+}
+
+.container-footer .busqueda {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 488px) {
+  .container-footer .busqueda {
+    display: inline;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container-footer .about {
+    padding-bottom: 0;
+  }
+  .container-footer .busqueda {
+    padding-top: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

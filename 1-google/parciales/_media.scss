@@ -1,0 +1,22 @@
+@media screen and (min-width:488px){
+  .container-footer .busqueda{
+    display: inline;
+    text-align: start;
+  }
+  
+}
+@media screen and (min-width:998px){
+  .container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .about{
+      padding-bottom: 0;
+    }
+    .busqueda{
+      padding-top: 0;
+    }
+  }
+  
+}
